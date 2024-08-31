@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Postal Department</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="India Post LOGO.jpg" alt="Postal Department Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="booking.html">Booking</a>
+                <a href="tracking.html">Tracking</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <div class="profile">
+               
+                <img src="icon1.png" alt="User Profile">
+                <img src="icon2.png" alt="User Profile">
+                <img src="icon3.png" alt="User Profile">
+                <img src="ai-generated-7776701_1280.webp" alt="User Profile">
+                </div>
+           
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Book a Shipment</h1>
+        <form class="booking-form">
+            <label for="sender-name">Sender Name</label>
+            <input type="text" id="sender-name" name="sender-name" required>
+
+            <label for="sender-address">Sender Address</label>
+            <textarea id="sender-address" name="sender-address" required></textarea>
+
+            <label for="recipient-name">Recipient Name</label>
+            <input type="text" id="recipient-name" name="recipient-name" required>
+
+            <label for="recipient-address">Recipient Address</label>
+            <textarea id="recipient-address" name="recipient-address" required></textarea>
+
+            <label for="cargo-type">Cargo Type</label>
+            <select id="cargo-type" name="cargo-type" required>
+                <option value="documents">Documents</option>
+                <option value="parcels">Parcels</option>
+                <option value="large-items">Large Items</option>
+            </select>
+
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" name="weight" step="0.01" required>
+
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+
+        <div class="additional-info">
+            <h2>Additional Information</h2>
+            <p>For any inquiries, please contact our support team. We are here to help you with the booking process and ensure your shipment is handled with care.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Postal Department</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

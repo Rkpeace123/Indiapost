@@ -1,0 +1,166 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  /* General Page Styles */
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-container .logo img {
+    height: 50px;
+  }
+  
+  .header-container nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header-container nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .header-container .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-container .profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header-container .icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .booking-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .booking-form textarea {
+    height: 100px;
+  }
+  
+  .booking-form button {
+    padding: 15px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-form button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Additional Section */
+  .additional-info {
+    margin-top: 30px;
+  }
+  
+  .additional-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .additional-info p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-container nav {
+      margin-top: 10px;
+    }
+  
+    .header-container .profile {
+      margin-top: 10px;
+    }
+  
+    .booking-form button {
+      font-size: 14px;
+    }
+  }
+  

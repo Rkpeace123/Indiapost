@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking - Postal Department</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="India Post LOGO.jpg" alt="Postal Department Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="booking.html">Booking</a>
+                <a href="tracking.html">Tracking</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <div class="profile">
+                <img src="icon1.png" alt="User Profile">
+                    <img src="icon2.png" alt="User Profile">
+                    <img src="icon3.png" alt="User Profile">
+                    <img src="ai-generated-7776701_1280.webp" alt="User Profile">
+                </div>
+            
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Track Your Shipment</h1>
+        <form class="tracking-form" id="tracking-form">
+            <label for="tracking-number">Tracking Number</label>
+            <input type="text" id="tracking-number" name="tracking-number" required>
+            <button type="submit">Track</button>
+        </form>
+
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Postal Department</p>
+        </div>
+    </footer>
+
+    <script>
+    
+        navigator.geolocation.getCurrentPosition(position => {
+            const { latitude, longitude } = position.coords;
+           map.innerHTML='<iframe width="1200" height="400" src="https://maps.google.com/maps?q='+latitude+','+longitude+'&amp;z=15&amp;output=embed"></iframe>';
+        
+        });
+            </script>
+</body>
+</html>
+
+
